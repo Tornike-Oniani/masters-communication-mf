@@ -8,7 +8,7 @@ const devConfig = {
   mode: 'development',
   devtool: 'inline-source-map',
   devServer: {
-    port: 8081,
+    port: 8082,
     historyApiFallback: true,
     static: {
       directory: path.join(__dirname, '../public'),
@@ -16,10 +16,10 @@ const devConfig = {
   },
   plugins: [
     new ModuleFederationPlugin({
-      name: 'management',
+      name: 'communication',
       filename: 'remoteEntry.js',
       exposes: {
-        './ManagementApp': './src/bootstrap',
+        './CommunicationApp': './src/bootstrap',
       },
     }),
     new HtmlWebpackPlugin({
