@@ -20,14 +20,14 @@ const devConfig = {
     },
   },
   plugins: [
-    new ModuleFederationPlugin({
-      name: 'communication',
-      filename: 'remoteEntry.js',
-      exposes: {
-        './CommunicationApp': './src/bootstrap',
-      },
-      shared: ['react', 'react-dom'],
-    }),
+    // new ModuleFederationPlugin({
+    //   name: 'communication',
+    //   filename: 'remoteEntry.js',
+    //   exposes: {
+    //     './CommunicationApp': './src/bootstrap',
+    //   },
+    //   shared: ['react', 'react-dom'],
+    // }),
     new HtmlWebpackPlugin({
       template: './public/index.html',
       publicPath: 'auto',
