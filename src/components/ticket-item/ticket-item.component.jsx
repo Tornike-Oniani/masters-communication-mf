@@ -88,7 +88,7 @@ const TicketItem = ({ data }) => {
           {issueDate}
         </td>
         <td className="md:table-row-item">
-          <div className="flex ml-2 mt-2 mb-2">
+          <div className="flex ml-2 mt-2 mb-2 md:m-0">
             <div
               className="action-link group"
               onClick={() => setOpenMode(true)}
